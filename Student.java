@@ -12,6 +12,11 @@ public class Student extends Person
     // given parameter values.
     public Student(String iName, String iAge, int iGrade, double igpa)
     {
+        super (iName, iAge);
+        grade = iGrade;
+        gpa = igpa;
+
+
 
     }
 
@@ -20,6 +25,10 @@ public class Student extends Person
     // age 0, with the given grade and gpa.
     public Student(int iGrade, double igpa)
     {
+        super("John Doe",0);
+        grade = iGrade
+
+        gpa = igpa;
 
     }
 
@@ -28,6 +37,9 @@ public class Student extends Person
     // and GPA of 0.0.
     public Student()
     {
+        super("John Doe",0);
+        grade = 0;
+        gpa = 0;
 
     }
 
@@ -37,10 +49,18 @@ public class Student extends Person
     {
         grade = iGrade;
     }
+    public void setGPA(int igpa)
+    {
+        gpa = igpa;
+    }
 
     public int getGrade()
     {
         return grade;
+    }
+    public int getGPA()
+    {
+        return gpa;
     }
 
     // TODO: Complete the toString method so that when we print

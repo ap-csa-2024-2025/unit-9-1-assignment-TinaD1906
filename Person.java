@@ -4,15 +4,27 @@ public class Person
     private int age;
 
     // TODO: Complete the non-default constructor
-    public Person(String iName, String iAge)
+    public Person(String iName, int iAge)
     {
+        this.name = iName;
+        this.age = iAge;
 
+    }
+    public String getName()
+    {
+        return name;
+    }
+
+    public int getAge()
+    {
+        return age;
     }
 
     // TODO: Complete the default constructor using "this"
     // Default values should be "John Doe", and 0
     public Person()
     {
+        this("John Doe", 0);
 
     }
 
